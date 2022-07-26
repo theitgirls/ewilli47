@@ -11,3 +11,9 @@ h2 {
     font-family: 'Kanit', sans-serif;
 }
 a {color:black;}
+
+nav {background-color:lightblue;}
+nav a {color:aliceblue;}
+nav {color:aliceblue;}
+
+nav a:hover {background-color:gray;}
