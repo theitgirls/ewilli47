@@ -12,7 +12,12 @@ h2 {
 }
 a {color:black;}
 
-nav {background-color:lightblue;}
+nav {
+    padding: 10px;
+    margin-bottom: 30px;
+    background-color:lightblue;
+    }
+
 nav a {color:black;}
 nav {color:black;}
 
