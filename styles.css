@@ -30,3 +30,8 @@ div {
     background-color:aliceblue;
     border-radius: 25px;
 }
+
+.litcrazymovie {
+    display: block;
+    margin: 0 auto;
+}
