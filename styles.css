@@ -13,7 +13,7 @@ h2 {
 a {color:black;}
 
 nav {background-color:lightblue;}
-nav a {color:aliceblue;}
-nav {color:aliceblue;}
+nav a {color:black;}
+nav {color:black;}
 
 nav a:hover {background-color:gray;}
