@@ -15,10 +15,10 @@ a {color:black;}
 nav {
     padding: 10px;
     margin-bottom: 30px;
-    background-color:lightblue;
+    background-color:lightcyan;
     }
 
 nav a {color:black;}
 nav {color:black;}
 
-nav a:hover {background-color:gray;}
+nav a:hover {background-color:lightblue;}
