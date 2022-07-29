@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+    <title>Lab 12 Slideshow</title>
+    <style>
+        body {
+            font-family: Verdana, Geneva, Tahoma, sans-serif; 
+            background-color: lightcyan;
+            color: #ffffff;
+        }
+        #slideshow-container {
+            background-color: aliceblue;
+            width: 1200px;
+            margin: auto; /* margin auto is centering this container */        
+        }
+
+        div {
+            border: 1px solid black;
+            margin: 20px;
+            padding: 40px;
+            background-color:aliceblue;
+            border-radius: 25px;
+            }
+
+        #bigimages {margin-right: 100px;}
+        #thumbnails {width: 840px; margin: auto; padding-top: 20px;} 
+        #fallthumb, #bikethumb, #niagarafallsthumb, #foursthumb, #sleepthumb, #tonguethumb, #thetachithumb, #museumthumb 
+        {width: 100px;}
+
+        #bigimages img {display: block; margin: 0 auto;}
+    </style>
+    <script>
+        function PlanetOff () {
+       document.getElementById('fall').style.display = 'none';
+       document.getElementById('bike').style.display = 'none';
+       document.getElementById('niagarafalls').style.display = 'none';
+       document.getElementById('fours').style.display = 'none';
+       document.getElementById('sleep').style.display = 'none';
+       document.getElementById('tongue').style.display = 'none';
+       document.getElementById('thetachi').style.display = 'none';
+       document.getElementById('museum').style.display = 'none';
+        }
+
+        function FallOn () {
+            document.getElementById('fall').style.display = 'block';
+        }
+
+        function BikeOn () {
+            document.getElementById('bike').style.display = 'block';
+        }
+
+        function NiagaraFallsOn () {
+            document.getElementById('niagarafalls').style.display = 'block';
+        }
+
+        function FoursOn () {
+            document.getElementById('fours').style.display = 'block';
+        }
+
+        function SleepOn () {
+            document.getElementById('sleep').style.display = 'block';
+        }
+
+        function TongueOn () {
+            document.getElementById('tongue').style.display = 'block';
+        }
+
+        function ThetaChiOn () {
+            document.getElementById('thetachi').style.display = 'block';
+        }
+
+        function MuseumOn () {
+            document.getElementById('museum').style.display = 'block';
+        }
+    </script>
+    </head>
+
+    <body onload="PlanetOff();">
+        <nav>
+            <a href="index.html">Home</a> | <a href="blog.html">Blog</a> | <a href="contact.html">Contact</a> | 
+            <a href="shellgame.html">Walnut Game</a> <a href="slideshow.html">Camp Slideshow</a>
+        </nav>
+        
+        <div id="slideshow-container">
+            <div id="bigimages">
+                <img src="slay.jpg" alt="fall" id="fall" height="500">
+                <img src="bike.jpg" alt="bike" id="bike" height="500">
+                <img src="slayyy.jpg" alt="niagara falls" id="niagarafalls" height="500">
+                <img src="fours.jpg" alt="fours" id="fours" height="500">
+                <img src="sleep.jpg" alt="sleep" id="sleep" height="500">
+                <img src="slay3.jpg" alt="tongue" id="tongue" height="500">
+                <img src="mcdonalds.jpg" alt="thetachi" id="thetachi" height="500">
+                <img src="museum.jpg" alt="museum" id="museum" height="500">
+            </div>
+
+            <div id="thumbnails">
+                <img src="slay.jpg" alt="fall" id="fallthumb" height="100" 
+                onclick="PlanetOff(); FallOn();">
+                <img src="bike.jpg" alt="bike" id="bikethumb" height="100" 
+                onclick="PlanetOff(); BikeOn();">
+                <img src="slayyy.jpg" alt="niagara falls" id="niagarafallsthumb" height="100" 
+                onclick="PlanetOff(); NiagaraFallsOn();">
+                <img src="fours.jpg" alt="fours" id="foursthumb" height="100" 
+                onclick="PlanetOff(); FoursOn();">
+                <img src="sleep.jpg" alt="sleep" id="sleepthumb" height="100" 
+                onclick="PlanetOff(); SleepOn();">
+                <img src="slay3.jpg" alt="tongue" id="tonguethumb" height="100" 
+                onclick="PlanetOff(); TongueOn();">
+                <img src="mcdonalds.jpg" alt="thetachi" id="thetachithumb" height="100" 
+                onclick="PlanetOff(); ThetaChiOn();">
+                <img src="museum.jpg" alt="museum" id="museumthumb" height="100" 
+                onclick="PlanetOff(); MuseumOn();">
+            </div>
+
+        </div>
+</body>
+</html>
