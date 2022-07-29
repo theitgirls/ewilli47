@@ -40,6 +40,7 @@
         {width: 100px;}
 
         #bigimages img {display: block; margin: 0 auto;}
+        #thumbnails img {display: block; margin: 0 auto;}
     </style>
     <script>
         function PlanetOff () {
@@ -51,6 +52,8 @@
        document.getElementById('tongue').style.display = 'none';
        document.getElementById('thetachi').style.display = 'none';
        document.getElementById('museum').style.display = 'none';
+       document.getElementById('sleepover').style.display = 'none';
+       document.getElementById('different').style.display = 'none';
         }
 
         function FallOn () {
@@ -84,6 +87,14 @@
         function MuseumOn () {
             document.getElementById('museum').style.display = 'block';
         }
+
+        function SleepoverOn () {
+            document.getElementById('sleepover').style.display = 'block';
+        }
+
+        function DifferentOn () {
+            document.getElementById('different').style.display = 'block';
+        }
     </script>
     </head>
 
@@ -103,6 +114,8 @@
                 <img src="slay3.jpg" alt="tongue" id="tongue" height="500">
                 <img src="mcdonalds.jpg" alt="thetachi" id="thetachi" height="500">
                 <img src="museum.jpg" alt="museum" id="museum" height="500">
+                <img src="sleepover.jpg" alt="sleepover" id="sleepover" height="500">
+                <img src="different.jpg" alt="different" id="different" height="500">
             </div>
 
             <div id="thumbnails">
@@ -122,6 +135,10 @@
                 onclick="PlanetOff(); ThetaChiOn();">
                 <img src="museum.jpg" alt="museum" id="museumthumb" height="100" 
                 onclick="PlanetOff(); MuseumOn();">
+                <img src="sleepover.jpg" alt="sleepover" id="sleepoverthumb" height="100"
+                onclick="PlanetOff(); SleepoverOn();">
+                <img src="different.jpg" alt="different" id="differentthumb" height="100"
+                onclick="PlanetOff(); DifferentOn();">
             </div>
 
         </div>
